@@ -1,11 +1,11 @@
-<div class="row">
-    <div class="col-auto">
+<div>
+    <div>
         <h2>Welcome, {{username}}!</h2>
     </div>
 </div>
 
-<div id="createPost" class="row mt-4">
-    <div class="col-md-6">
+<div id="create-post" class="row">
+    <div class="col-md-11">
         <h3>Create a New Post:</h3>
 
         <form class="form new-post-form">
@@ -15,7 +15,7 @@
             </div>
             <div class="form-group">
                 <label for="post-text">post text:</label>
-                <input class="form-input" type="text" id="post-text" name="post-text" />
+                <textarea type="text" id="post-text" name="post-text"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Create</button>
         </form>

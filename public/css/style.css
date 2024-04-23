@@ -2,8 +2,43 @@
     font-family: Copperplate, Verdana, Helvetica, sans-serif;
     font-optical-sizing: auto;
     font-size: normal;
+    color: white;    
 }
 
+#background {    
+    background-color: linear-gradient(to bottom right, #66ccff 0%, #99ccff 100%);
+    background-size: 500px;
+    background-position: right; 
+    background-repeat: no-repeat; 
+    background-attachment: auto;    
+    width: 100%;
+    height: 100%;    
+    background-image: url("../../assets/images/blogBackground6.jpg");
+    background-color: #002266;   
+}
 
+.container {
+    margin-left: 25px!important;
+}
 
+#logout {
+    color: blue;
+}
 
+#create-post {
+    margin-left: 40%;    
+}
+
+#post-text {
+    height: 450px;
+    width: 100%;
+    color: black;
+}
+
+#footer {
+    position: fixed;    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}

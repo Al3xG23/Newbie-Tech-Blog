@@ -15,9 +15,9 @@ const loginFormHandler = async (event) => {
 
     if (response.ok) {
 
-      // If successful, redirect the browser to the budget page
+      // If successful, redirect the browser to the homepage
 
-      document.location.replace('/');
+      document.location.replace('/homepage');
     } else {
       alert(response.statusText);
     }
@@ -39,7 +39,7 @@ const signupFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace('/');
+      document.location.replace('/homepage');
     } else {
       alert(response.statusText);
     }

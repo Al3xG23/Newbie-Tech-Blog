@@ -25,7 +25,7 @@ Comments.belongsTo(User, {
     foreignKey: 'user_id'
 })
 
-Comment.belongsTo(Posts, {
+Comments.belongsTo(Posts, {
     foreignKey: 'post_id'
 })
 

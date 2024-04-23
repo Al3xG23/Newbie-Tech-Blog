@@ -10,43 +10,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 
-<body>
+<body id="background">
 
     <div class="flex-column justify-space-around">
 
         <header id="header" class="display-flex justify-space-between align-center p-2">
-            
+
             <h1>
                 <a href="/">Newbie Tech Blog!</a>
             </h1>
 
             <nav>
                 <!-- Conditionally render login or logout links -->
-                {{#if logged_in}}
+                {{!-- {{#if logged_in}} --}}
 
-                <a href="/">homepage</a> |
-                <a href="/dashboard">dashboard</a> |
-                <button class="no-button" id="logout">logout</button>
-                {{/if}}
+                <a href="/homepage">homepage</a> |
+                <a href="/">dashboard</a> |                
+                <button id="logout">logout</button> 
+
+                {{!-- {{/if}} --}}
             </nav>
 
         </header>
 
-        <main class="container container-fluid mt-5">
+        <main class="container mt-5">
             <!-- Render the sub layout -->
             {{{ body }}}
         </main>
 
-        <footer>
-            <p>Mariel's Tech Blog</p>
-        </footer>
-
     </div>
+
+    <footer id="footer">
+        <p class="strong">Mariel's Tech Blog</p>
+    </footer>
 
     {{#if logged_in}}
     <script src="/js/logout.js"></script>
     {{/if}}
-    
+
+
 </body>
 
 </html>
